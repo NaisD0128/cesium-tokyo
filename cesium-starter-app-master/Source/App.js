@@ -1,5 +1,8 @@
 var viewer = new Cesium.Viewer('cesiumContainer');
 
+//視点の変更
+viewer.camera.flyTo({ destination : Cesium.Cartesian3.fromDegrees(139.76,35.67, 15000.0)});
+
 //ポイントを追加
 var point = viewer.entities;
 
@@ -18,7 +21,6 @@ point2.add({
         position : Cesium.Cartesian3.fromDegrees(-65.59777, 40.03883),
         point : {
             pixelSize : 10,
-            extrudedHeight: 500000.0,
             color : Cesium.Color.BLUE
     }
 });
@@ -32,7 +34,6 @@ line1.add({
         positions : Cesium.Cartesian3.fromDegreesArray([-75, 35,
                                                         -125, 35]),
         width : 5,
-        extrudedHeight: 500000.0,
         material : Cesium.Color.RED
     }
 });
