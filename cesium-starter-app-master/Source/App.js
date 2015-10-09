@@ -18,6 +18,7 @@ point2.add({
         position : Cesium.Cartesian3.fromDegrees(-65.59777, 40.03883),
         point : {
             pixelSize : 10,
+            extrudedHeight: 500000.0,
             color : Cesium.Color.BLUE
     }
 });
@@ -31,6 +32,7 @@ line1.add({
         positions : Cesium.Cartesian3.fromDegreesArray([-75, 35,
                                                         -125, 35]),
         width : 5,
+        extrudedHeight: 500000.0,
         material : Cesium.Color.RED
     }
 });
